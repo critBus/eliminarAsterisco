@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<StackPane prefHeight="520.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eliminarasterisco.VentanaController">
+   <children>
+      <SplitPane dividerPositions="0.7914572864321608" orientation="VERTICAL" prefHeight="500.0" prefWidth="1000.0">
+        <items>
+            <StackPane prefHeight="312.0" prefWidth="825.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                        <StackPane prefHeight="150.0" prefWidth="823.0">
+                           <children>
+                              <HTMLEditor fx:id="Thtml" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="150.0" prefWidth="361.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="823.0">
+                           <children>
+                              <JFXTextArea fx:id="T" prefHeight="185.0" prefWidth="506.0" style="-fx-background-color: #9fe5f8;" unFocusColor="#9fe5f8" />
+                           </children>
+                        </StackPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </StackPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <JFXButton fx:id="BE" layoutX="14.0" layoutY="14.0" onAction="#apretarEliminarAsterisco" text="Eliminar *" />
+                  <JFXButton fx:id="BH" layoutX="128.0" layoutY="14.0" onAction="#apretarEliminarAsteriscoYHtml" text="html *-" />
+                  <JFXButton fx:id="BEliminarNumero" layoutX="223.0" layoutY="14.0" onAction="#apretoEliminarNumero" text="Eliminar #" />
+                  <JFXButton fx:id="BCopiar" layoutX="329.0" layoutY="14.0" onAction="#apretoCopiar" text="Copiar" />
+                  <JFXButton fx:id="BTA" layoutX="402.0" layoutY="14.0" onAction="#apretoBTA" text="T Alund" />
+                  <JFXButton fx:id="BVerHTMl" layoutX="486.0" layoutY="14.0" onAction="#apretoBVerHTML" text="Ver HTML" />
+                  <JFXButton fx:id="BVaciar" layoutX="22.0" layoutY="42.0" onAction="#apretoBVaciar" text="vaciar" />
+                  <JFXButton fx:id="BChar" layoutX="129.0" layoutY="42.0" onAction="#apretoBChar" text="char" />
+                  <JFXTextField fx:id="TChar" disable="true" layoutX="335.0" layoutY="42.0" prefHeight="25.0" prefWidth="69.0" promptText="char salida" />
+                  <JFXTextField fx:id="SPChar" layoutX="220.0" layoutY="42.0" prefHeight="25.0" prefWidth="76.0" />
+                  <JFXButton fx:id="BCharss" layoutX="431.0" layoutY="42.0" onAction="#apretoBCharss" text="chars" />
+                  
+                  
+                  <JFXButton fx:id="BPonerDelante" layoutX="510.0" layoutY="42.0" onAction="#apretoPonerDelante" text="Delante" />
+                  <JFXTextField fx:id="TPonerDelante"  layoutX="580.0" layoutY="42.0" prefHeight="25.0" prefWidth="80.0" promptText="poner delante" />
+                  <JFXButton fx:id="BQuitarHtmlYPonerDelante" layoutX="700.0" layoutY="42.0" onAction="#apretoQuitarHtmlYPonerDelante" text="html *- y Delante" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</StackPane>
